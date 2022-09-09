@@ -1,7 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# leaderboard: first version 
-> setup the leaderboard project .
+# leaderboard: second version 
+> build a leaderboard game website that have 2 main buttons submit and refresh buttons.
+when clicking the submit button it takes the user name and score as inputs and send it to the leaderboard API to process these data.
+when clicking the refresh button it gets the the data from leaderboard API and display it inside the
+page as unorder list.
 
 ## Built With
 
