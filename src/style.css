@@ -2,6 +2,22 @@
   font-family: sans-serif;
   font-weight: bold;
   box-sizing: border-box;
+  color: var(--font-color, black);
+}
+
+body {
+  background-image: url(./background.jpg);
+}
+
+:root {
+  --main-color: #36b37f;
+  --secondary-color: white;
+  --border-color: #36b37f;
+  --box-color: green;
+  --border-color-2: rgb(203, 35, 203);
+  --list-color-1: purple;
+  --list-color-2: lightcyan;
+  --font-color: orange;
 }
 
 main {
@@ -35,9 +51,10 @@ main h1 {
 }
 
 button {
-  border: 3px solid black;
-  background-color: white;
-  box-shadow: 3px 3px black;
+  border: 3px solid var(--border-color, black);
+  background-color: var(--main-color, white);
+  color: var(--secondary-color, black);
+  box-shadow: 3px 3px var(--box-color, black);
   font-size: 15px;
 }
 
@@ -48,15 +65,16 @@ button {
 .recent-scores ul {
   list-style: none;
   padding: 0;
-  border: 3px black solid;
+  border: 6px var(--border-color-2, black) solid;
 }
 
 .recent-scores ul li {
   padding: 15px;
+  background-color: var(--list-color-1, white);
 }
 
 .recent-scores ul li:nth-of-type(2n) {
-  background-color: #ddd;
+  background-color: var(--list-color-2, #ddd);
 }
 
 .score div {
